@@ -1,0 +1,12 @@
+name: Status Check
+on: [push]
+jobs: 
+        Check build status
+                runs-on: ubuntu-latest
+                steps:
+                        -run: make install
+                        -run: make build
+                        -run: make package-install
+                        -run: make publish
+                        -run: make brain-games
+                        -run: make lint
