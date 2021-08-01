@@ -1,7 +1,7 @@
 name: Status Check
 on: [push]
 jobs: 
-        Check build status
+        Check build status:
                 runs-on: ubuntu-latest
                 steps:
                         -run: make install
